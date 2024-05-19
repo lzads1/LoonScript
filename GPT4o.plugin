@@ -1,0 +1,14 @@
+#!name=GPT4o
+#!desc=
+#!homepage=
+#!author=Neko
+#!icon=
+
+[Script]
+
+http-request https://nichousha.sjrjyffs.top/api/img/aiSketch script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/GTP4ohd.js, requires-body=true, timeout=10, tag=GTP4ohd
+http-response https://nichousha.sjrjyffs.top/api/app/user/getCurrentInfo script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/GTP4o.js, requires-body=true, timeout=10, tag=GTP4o
+
+[MITM]
+
+hostname = nichousha.sjrjyffs.top
